@@ -1,2 +1,2 @@
-# luckyspin
-Ply Now ---->
+# Lucky Spin
+Play Now ----> http://wheel.btcpot.cf
