@@ -1,0 +1,516 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#top {
+    background: #06042B url("../img/background.jpg") no-repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+    padding: 25px 0px;
+}
+.sign-in {
+    clear: both;
+    text-align: right;
+}
+.logo img {
+    max-width: 368px;
+}
+.spin-menu {
+    margin-top: -25px;
+}
+.wheelcont {
+    margin-bottom: 30px;
+}
+.spinit {
+    text-align: center;
+    padding: 10px;
+}
+.site-branding {
+    margin: 0 auto;
+    text-align: center;
+}
+.button {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+.spin-circle {
+    border-radius: 1px;
+    padding: 9px 15px;
+    background-color: rgba(255, 0, 0, 1);
+    background-image: -webkit-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -moz-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -ms-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -o-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    padding: 8px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 0px rgba(196, 0, 0, 1);
+    z-index: 10000;
+    position: relative;
+}
+.spin-circle:hover,
+.spin-circle:focus {
+    text-shadow: 0px 2px 0px rgba(196, 0, 0, 1), 0px 2px 5px rgba(0, 0, 0, 0.53)
+}
+.spin-circle:active {
+    position: relative;
+    top: 3px;
+}
+.spin-details {
+    border-radius: 1px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 0, 0, 1);
+    background-image: -webkit-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -moz-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -ms-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -o-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 0px rgba(196, 0, 0, 1)
+}
+.wager,
+.balance,
+.balance-result {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.balance-result {
+    font-size: 25px !important;
+}
+#wager-result {
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+}
+#wager-result:focus {
+    border: 0;
+}
+.stakes table {
+    width: 100%;
+}
+.button-stake {
+    border-radius: 1px;
+    background-color: rgba(255, 0, 0, 1);
+    background-image: -webkit-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -moz-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -ms-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: -o-linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    background-image: linear-gradient(top, rgba(253, 118, 0, 1) 40%, rgba(234, 44, 1, 1) 71%);
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    box-shadow: 0px 0px 0px 2px rgba(255, 162, 0, 1), 0px 0px 0px 3px rgba(173, 0, 0, 1);
+    cursor: pointer;
+    margin: 7px;
+    width: 124px;
+    padding: 2px;
+    display: inline-block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translate(2px 2px);
+    -moz-transform: translate(2px 2px);
+    transform: translate(2px 2px);
+    font-size: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 0px rgba(196, 0, 0, 1);
+}
+.button-stake:hover,
+.button-stake:focus {
+    text-shadow: 0px 2px 0px rgba(196, 0, 0, 1), 0px 2px 5px rgba(0, 0, 0, 0.53);
+    position: relative;
+    bottom: 1px;
+}
+.button-stake:active {
+    position: relative;
+    top: 1px;
+}
+#main {
+    margin-bottom: 30px;
+}
+.top-menu {
+    margin-top: 10px;
+}
+.user-menu,
+.user-submenu {
+    list-style-type: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+    font-size: 18px;
+}
+.user-submenu .idle a {
+    cursor: pointer;
+}
+.user-menu .idle a:hover,
+.user-menu .idle a:focus {
+    border-bottom: 2px solid #323e4a;
+}
+.user-menu .idle.highlight a:hover,
+.user-menu .idle.highlight a:focus {
+    border-bottom:2px solid #ed6802;
+}
+.user-menu li,
+.user-submenu li {
+    list-style-type: none;
+    display: inline-block;
+}
+.idle a {
+    text-decoration: none;
+    padding-top: 5px;
+    margin-right: 15px;
+    color: #323e4a;
+}
+.idle.active a {
+    border-bottom:2px solid #323e4a;
+}
+.idle.highlight a{
+    color:#ed6802 !important;
+}
+.user-submenu .idle a {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.idle.selected a,
+.user-submenu .idle a:hover,
+.user-submenu .idle a:focus {
+    color: #fff;
+    background: #323e4a;
+}
+.table-spins,
+.my-table-spins,
+.chat {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 16px;
+}
+.my-table-spins,
+.autobet,
+.chat {
+    display: none;
+}
+.table-spins thead td,
+.my-table-spins thead td {
+    font-weight: bold;
+    font-size: 110%;
+}
+.table-spins td,
+.my-table-spins td {
+    padding: 5px;
+}
+.table-spins tbody tr:nth-child(odd),
+.my-table-spins tbody tr:nth-child(odd) {
+    background: #e8ecf1;
+}
+.table-spins tr:nth-child(even),
+.my-table-spins tr:nth-child(even) {
+    background: #FFF;
+}
+.wheelimg {
+    position: relative;
+    padding-top: 4px;
+    max-width: 100%;
+}
+.skinwheels:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    top: 50%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -75px;
+}
+.wheel-one:after {
+    background-image: url("../img/wheel1_mid.png");
+    background-size: 150px;
+}
+.wheel-two:after {
+    background-image: url("../img/wheel2_mid.png");
+    background-size: 150px;
+}
+.wheel-three:after {
+    background-image: url("../img/wheel3_mid.png");
+    background-size: 150px;
+}
+.wheel-four:after {
+    background-image: url("../img/wheel4_mid.png");
+    background-size: 150px;
+}
+.wheel-active {
+    display: block !important;
+}
+.wheel-one,
+.wheel-two,
+.wheel-three,
+.wheel-four {
+    display: none;
+    position: relative;
+}
+.wheelcont {
+    position: relative;
+}
+.wheelcont:after {
+    content: "";
+    background-image: url("../img/arrow.png");
+    background-repeat: none;
+    background-size: 54px 63px;
+    position: absolute;
+    right: -11px;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 63px;
+    top: 50%;
+    margin-top: -30px;
+}
+.table-result {
+    position: relative;
+}
+.table-result.up:after {
+    top: 0;
+    color: #35ff02;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\e253";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
+.table-result.down:after {
+    top: 0;
+    color: #f84545;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\e252";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
+.table-result.equal:after {
+    top: 0;
+    color: #E1C701;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    content: "\2212";
+    font-size: 80%;
+    position: absolute;
+    right: 15px;
+    vertical-align: middle;
+}
+.wheel-skins {
+    margin-top: 100px;
+}
+.change-skin {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.change-skin:hover {
+    opacity: 0.5;
+}
+.skin-active {
+    opacity: 0.5;
+}
+.skin-one {
+    background: url('../img/skin1.png');
+    background-size: 50px;
+    background-repeat: none;
+}
+.skin-two {
+    background: url('../img/skin2.png');
+    background-size: 50px;
+    background-repeat: none;
+}
+.skin-three {
+    background: url('../img/skin3.png');
+    background-size: 50px;
+    background-repeat: none;
+}
+.skin-four {
+    background: url('../img/skin4.png');
+    background-size: 50px;
+    background-repeat: none;
+}
+#toggleSound {
+    background-size: 20px 14px;
+    width: 20px;
+    height: 14px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.multiplier {
+    display: none;
+    text-align: center;
+    line-height: 45px;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1200px) {
+    .button-stake {
+        width: 110px;
+    }
+    #left-menu {
+        margin-top: 50px;
+    }
+    .wheelcont:after {
+        margin-top: -25px;
+        background-size: 40px 53px;
+        right: -9px;
+        width: 40px;
+        height: 53px;
+    }
+    .skinwheels:after {
+        background-size: 120px auto;
+        width: 120px;
+        height: 120px;
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+    .wheel-skins {
+        margin-top: 140px;
+    }
+    .logo img {
+        max-width: 350px;
+    }
+}
+@media (max-width: 992px) {
+    .button-stake {
+        width: 176px;
+    }
+}
+@media (max-width: 768px) {
+    .button-stake {
+        width: 100%;
+    }
+    .stakes table td {
+        padding: 5px;
+    }
+    .wheelcont {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .wheel-skins {
+        margin-top: 60px;
+        text-align: center;
+    }
+    .change-skin {
+        display: inline-block;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .wheelcont::after {
+        margin-top: -19px;
+        background-size: 30px 43px;
+        right: -7px;
+        width: 30px;
+        height: 43px;
+    }
+    .skinwheels::after {
+        background-size: 80px auto;
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+    .button-stake {
+        font-size: 16px;
+    }
+}
+#faucetClaimCaptcha {
+    position: absolute;
+    width: 304px;
+    left: calc(50% - 152px);
+    top: -90px;
+    transition: top 1s ease;
+    z-index: 1000;
+}
+[data-notify="progressbar"] {
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+}
+#chat_monitor{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    height: 500px;
+    padding: 5px;
+}
+.chat_message{
+    margin: 1px;
+}
+.chat_message .time{
+    font-weight: 100;
+    font-size: 12px;
+}
+.chat_message .username{
+    font-weight: bold;
+    padding: 5px;
+}
+.chat_message .message{
+    font-weight: normal;
+    padding: 5px;
+}
+.chat_message.MOD{
+    color: #9B59B6;
+    background: rgba(155,89,182, 0.05);
+}
+.chat_message.ADMIN{
+    color: #E67E22;
+    background: rgba(230,126,34, 0.05);
+}
+.chat_message.OWNER{
+    color: #C0392B;
+    background: rgba(192,57,43, 0.05);
+}
+.chat_message.SERVER{
+    color: #27AE60;
+    background: rgba(39,174,96, 0.05);
+}
